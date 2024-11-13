@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0;
+* {
+    margin: 0 auto;
 }
+
+.bannerSection,
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -10,10 +18,11 @@
     font-style: normal;
 }
 
-.headingSection{
-    background: linear-gradient(180deg, #111111, #333333);  
-    color: #FFFFFF;  
+.headingSection {
+    background: linear-gradient(180deg, #111111, #333333);
+    color: #FFFFFF;
 }
+
 .display-flex {
     display: flex;
     align-items: center;
@@ -23,7 +32,7 @@
 .navbar {
     padding-top: 55px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 nav>ul>li {
@@ -33,6 +42,8 @@ nav>ul>li {
 
 .nav-links>li {
     margin-left: 45px;
+    font-size: 1.125rem;
+
 }
 
 #homeBtn {
@@ -42,17 +53,38 @@ nav>ul>li {
 }
 
 .logodeSign {
-    color: rgb(230, 83, 60); 
-    font-weight: 900; 
-    font-size: 36px; 
-    line-height: 120%; 
+    color: rgb(230, 83, 60);
+    font-weight: 900;
+    font-size: 2.25rem;
+    line-height: 120%;
     text-align: left;
-    font-style:  italic;
-    
+    font-style: italic;
 }
 
-@media screen and (max-width:576px){
-     .nav-links{
+.bannerSection {
+    margin-top: 32px;
+    justify-content: center;
+    gap: 85px;
+}
+
+.heroContent {
+    max-width: 520px; 
+}
+
+.buttonPrimary {
+    margin-top: 28px;
+    max-width:224px;
+    height: 54px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    .nav-links {
         display: none;
-     }
+    }
 }
