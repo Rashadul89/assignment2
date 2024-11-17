@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
 .bannerSection,
 .navbar {
     max-width: 1440px;
@@ -17,8 +23,9 @@
     font-style: normal;
     color: rgb(255, 255, 255);
 }
-.inter-font h5{
-    font-size:1.125rem;
+
+.inter-font h5 {
+    font-size: 1.125rem;
 }
 
 .headingSection {
@@ -31,9 +38,11 @@
     align-items: center;
 
 }
-main{
+
+main {
     background-color: black;
 }
+
 .navbar {
     padding-top: 55px;
     align-items: center;
@@ -97,7 +106,7 @@ nav>ul>li {
     background: rgb(230, 83, 60);
     color: #FFFFFF;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
     font-family: "Inter", sans-serif;
 }
 
@@ -109,49 +118,134 @@ nav>ul>li {
     max-width: 320px;
     height: 580;
 }
-.workoutItemsDetails{ max-width: 1044px;
+
+.workoutItemsDetails {
+    max-width: 1044px;
     margin: 0 auto;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     padding-top: 100px;
 
 }
-.workoutItemsDetails h3{
+
+/* .workoutItemsDetails h3{
    color:  rgb(255, 255, 255);
    font-size: 3rem;
    font-weight: 900;
-}
-.worktitles{
+} */
+.worktitles {
     text-align: center;
 }
-.worksContainer{
+
+.worksContainer {
     display: grid;
-    grid-template-columns: repeat(4,1fr); 
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 58px;
     text-align: center;
 }
-.workItems{
+
+.workItems {
     justify-content: center;
 }
-.worksContainer img{
+
+.worksContainer img {
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.runWork{
-    border-radius: 18px; 
+
+.runWork {
+    border-radius: 18px;
     background: rgb(34, 34, 34);
     max-width: 1060px;
     height: 371px;
     margin-top: 100px;
 }
-.runTitles{
+
+.runTitles {
     max-width: 440px;
 }
-.runImg img{
+
+.runImg img {
     max-width: 360px;
     height: 310px;
     border-radius: 18px;
 }
+.training {  
+    max-width: 1060px; 
+    margin-top: 100px;
+}
+.trainContainer{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+    margin-top: 10px;
+} 
+.itemsCont{
+    max-width: 1060px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.itemsCont img{
+    max-width: 500px;
+    height: 200px;
+}
+.meetTeamContainer{
+    padding-top: 100px;
+    padding-bottom: 85px;
+} 
+.imgContainer{
+    border-radius: 18px; 
+    background: rgba(255, 255, 255, 0.1);
+}
+.imgContainer img{ 
+    max-width: 320px;
+    height: 270px;
+}
+.imgContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(2, auto);  
+    gap: 10px; 
+    padding: 10px;
+    max-width: 1060px;
+}
+.trainer {
+    position: relative;  
+    border-radius: 8px;
+    overflow: hidden;
+  }
+.trainer img{
+    max-width: 320px;
+      height:  250px;
+      display: block;
+}
+.trainer .text-overlay {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+.footerContainer{
+    padding-top: 66px;
+    max-width: 1440px;
+    background:rgb(34, 34, 34);
+    max-width: 1440px;
+    height: 489px;
+} 
+.footerLogo{
+    
+}
+.footerAddress{
+
+}
 @media screen and (max-width:576px) {
+
     /* *{
         margin: 0 auto;
     } */
@@ -159,7 +253,8 @@ nav>ul>li {
         display: flex;
         flex-direction: column;
 
-    } 
+    }
+
     .nav-links {
         display: none;
     }
@@ -176,20 +271,23 @@ nav>ul>li {
     .heroContent h3 {
         font-size: 2.1rem;
     }
+
     .worksContainer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-}
-.runWork{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-}
-.runImg img{
-    margin-top: 20px;
-    max-width: 280px;
-    height: 170px;
-    border-radius: 18px;
-}
- 
+    }
+
+    .runWork {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .runImg img {
+        margin-top: 20px;
+        max-width: 280px;
+        height: 170px;
+        border-radius: 18px;
+    }
+
 }
