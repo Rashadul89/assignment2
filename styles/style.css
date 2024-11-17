@@ -8,7 +8,6 @@
 .navbar {
     max-width: 1440px;
     margin: 0 auto;
-
 }
 
 .inter-font {
@@ -16,6 +15,10 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: rgb(255, 255, 255);
+}
+.inter-font h5{
+    font-size:1.125rem;
 }
 
 .headingSection {
@@ -28,7 +31,9 @@
     align-items: center;
 
 }
-
+main{
+    background-color: black;
+}
 .navbar {
     padding-top: 55px;
     align-items: center;
@@ -43,7 +48,6 @@ nav>ul>li {
 .nav-links>li {
     margin-left: 45px;
     font-size: 1.125rem;
-
 }
 
 #homeBtn {
@@ -68,23 +72,124 @@ nav>ul>li {
 }
 
 .heroContent {
-    max-width: 520px; 
+    max-width: 520px;
+}
+
+.heroContent h3 {
+    font-size: 4.8rem;
+}
+
+.paragraph {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+
+.buttonSecondery {
+    background-color: rgb(255, 255, 255);
 }
 
 .buttonPrimary {
     margin-top: 28px;
-    max-width:224px;
+    max-width: 224px;
     height: 54px;
     padding: 16px 40px 16px 40px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     color: #FFFFFF;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
+    font-family: "Inter", sans-serif;
 }
 
+.buttonPrimary:hover {
+    background-color: #111111;
+}
+
+.heroImg img {
+    max-width: 320px;
+    height: 580;
+}
+.workoutItemsDetails{ max-width: 1044px;
+    margin: 0 auto;
+    background-color:rgb(0, 0, 0);
+    padding-top: 100px;
+
+}
+.workoutItemsDetails h3{
+   color:  rgb(255, 255, 255);
+   font-size: 3rem;
+   font-weight: 900;
+}
+.worktitles{
+    text-align: center;
+}
+.worksContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    margin-top: 58px;
+    text-align: center;
+}
+.workItems{
+    justify-content: center;
+}
+.worksContainer img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.runWork{
+    border-radius: 18px; 
+    background: rgb(34, 34, 34);
+    max-width: 1060px;
+    height: 371px;
+    margin-top: 100px;
+}
+.runTitles{
+    max-width: 440px;
+}
+.runImg img{
+    max-width: 360px;
+    height: 310px;
+    border-radius: 18px;
+}
 @media screen and (max-width:576px) {
+    /* *{
+        margin: 0 auto;
+    } */
+    .bannerSection {
+        display: flex;
+        flex-direction: column;
+
+    } 
     .nav-links {
         display: none;
     }
+
+    .heroImg {
+        max-width: 350px;
+    }
+
+    .buttonPrimary {
+        max-width: 165px;
+        padding: 16px 40px 16px 40px;
+    }
+
+    .heroContent h3 {
+        font-size: 2.1rem;
+    }
+    .worksContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
+.runWork{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+.runImg img{
+    margin-top: 20px;
+    max-width: 280px;
+    height: 170px;
+    border-radius: 18px;
+}
+ 
 }
